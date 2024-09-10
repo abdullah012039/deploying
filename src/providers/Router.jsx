@@ -11,7 +11,7 @@ import WatchlistsPage from "../pages/WatchlistsPage";
 
 const ROUTES = [
   {
-    path: "/",
+    path: "/deploying/",
     element: <Layout />,
     errorElement: <PageNotFound />,
     children: [
