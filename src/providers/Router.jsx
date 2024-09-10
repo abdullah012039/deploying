@@ -16,27 +16,27 @@ const ROUTES = [
     errorElement: <PageNotFound />,
     children: [
       {
-        path: "/",
+        path: "/deploying/",
         element: <HomePage />,
       },
       {
-        path: "/search",
+        path: "/deploying/search",
         element: <SearchPage />,
       },
       {
-        path: "/trailer/:id",
+        path: "/deploying/trailer/:id",
         element: <TrailerPage />,
       },
       {
-        path: "/movie/:id",
+        path: "/deploying/movie/:id",
         element: <MovieDetailsPage />,
       },
       {
-        path: "/watchlists",
+        path: "/deploying/watchlists",
         element: <WatchlistsPage />,
       },
       {
-        path: "/watchlist/:id",
+        path: "/deploying/watchlist/:id",
         element: <WatchlistPage />,
       }
     ],
