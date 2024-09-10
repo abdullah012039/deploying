@@ -36,13 +36,13 @@ const ROUTES = [
         element: <WatchlistsPage />,
       },
       {
-        path: "/deploying/watchlist/:id",
+        path: "/deployigg/watchlist/:id",
         element: <WatchlistPage />,
       }
     ],
   },
 ];
-
+//
 const router = createBrowserRouter(ROUTES);
 
 const Router = () => {
