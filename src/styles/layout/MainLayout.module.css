@@ -1,0 +1,110 @@
+.container {
+    display: grid;
+    grid-template-areas:    "main main list"
+                            "main main list"
+                            "slider1 slider1 slider1"
+                            "slider2 slider2 slider2";
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    height: 230vh;
+  }
+  .container:not(:has(.thirdSlider)) {
+    grid-template-areas:    "main main list"
+                            "main main list"
+                            "slider1 slider1 slider1";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 150vh;
+  }
+  
+  .mainSlider {
+    grid-area: main; 
+    padding: 20px;
+  }
+  
+  .list {
+    grid-area: list; 
+    padding: 20px;
+    background: linear-gradient(225deg , var(--secondary-color) 0%, transparent 20%);
+  }
+
+  .secondSlider,
+  .thirdSlider { 
+    padding: 20px;
+  }
+  .secondSlider {
+    grid-area: slider1; 
+  }
+.thirdSlider {
+        grid-area: slider2; 
+    }
+  
+  
+
+  @media (max-width: 1024px) {
+    .container{
+      grid-template-areas: 
+        "main main main"
+        "main main main"
+        "list list list"
+        "list list list"
+        "slider1 slider1 slider1"
+        "slider2 slider2 slider2";
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: repeat(6, 1fr);
+      height: 300vh;
+    }
+    .container:not(:has(.thirdSlider)) {
+      grid-template-areas:    "main main main"
+                              "main main main"
+                              "list list list"
+                              "list list list"
+                              "slider1 slider1 slider1";
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: repeat(5,1fr);
+      height: 200vh;
+    }
+    .container:has(.hide) {
+      grid-template-areas: 
+        "main main main"
+        "main main main"
+        "slider1 slider1 slider1"
+        "slider2 slider2 slider2";
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: repeat(4, 1fr);
+      height: 200vh;  
+    }
+
+    .list.hide {
+      display: none;
+    }
+  }
+  @media (max-width: 768px) {
+    .container:has(.hide) {
+      grid-template-areas: 
+        "main main main"
+        "main main main"
+        "slider1 slider1 slider1"
+        "slider2 slider2 slider2";
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: repeat(4, 1fr);
+      height: 170vh;  
+    }
+    .list.hide {
+      display: none;
+    }
+  }
+  @media (max-width: 600px) {
+    .container:has(.hide) {
+      grid-template-areas: 
+        "main main main"
+        "slider1 slider1 slider1"
+        "slider2 slider2 slider2";
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      height: 150vh;
+    }
+    .list.hide {
+      display: none;
+    }
+  }

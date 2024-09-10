@@ -1,0 +1,29 @@
+@import url("../theme/theme.css");
+.castSliderContainer {
+  padding: 20px;
+}
+
+.castCard {
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease; 
+  cursor: pointer;
+}
+
+.castCard:hover {
+  transform: scale(1.05);
+}
+
+.castImage {
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.castCardContent {
+  text-align: center;
+}

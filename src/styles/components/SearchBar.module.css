@@ -1,0 +1,79 @@
+@import url("../theme/theme.css");
+.searchBar {
+    display: flex;
+    flex-direction: row; /* Arrange elements in a row */
+    align-items: center; /* Center items vertically */
+    padding: 10px;
+    background: var(--secondary-color-3); /* Dark background */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px var(--third-color); /* Dark shadow */
+    width: 100%;
+    max-width: 1200px; /* Adjusted width to fit row layout */
+    margin: 0 auto;
+    gap: 10px; /* Space between items */
+}
+
+.categorySelect {
+    padding: 10px;
+    border: 1px solid #444; /* Dark border */
+    border-radius: 4px;
+    background: var(--secondary-color); /* Dark background */
+    color: var(--text-color); /* White text */
+    font-size: 16px;
+    outline: none;
+}
+.categorySelect:focus {
+    border-color: var(--primary-color); /* Highlight border color */
+}
+.categorySelect option {
+    background: var(--secondary-color); /* Dark background */
+    color: var(--text-color); /* White text */
+}
+.categorySelect option:checked {
+    background: var(--primary-color); /* Highlight background color */
+    color: var(--text-color); /* White text */
+}
+.categorySelect option:hover {
+    background-color: var(--primary-color-hover) !important;
+    color: var(--text-color);
+}
+.searchWrapper {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 10px; /* Space between input and button */
+}
+
+.searchInput {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #444; /* Dark border */
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    background: var(--secondary-color); /* Dark background */
+    color: var(--text-color); /* White text */
+    transition: border-color 0.3s ease;
+    width: 100%;
+}
+
+.searchInput:focus {
+    border-color: var(--primary-color); /* Highlight border color */
+}
+
+.searchButton {
+    background: var(--primary-color); /* Blue button */
+    border: none;
+    color: var(--text-color); /* White text */
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.searchButton:hover {
+    background: var(--primary-color); /* Darker blue on hover */
+}
+
+
+

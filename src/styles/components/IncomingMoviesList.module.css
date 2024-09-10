@@ -1,0 +1,60 @@
+@import url("../theme/theme.css");
+.card {
+    max-width: 200px;
+    height: 300px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 5px var(--third-color);
+    transition: transform box-shadow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border-radius: 10px !important;
+}
+
+
+.cardMedia {
+    height: 300px;
+    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s;
+}
+.movieTitle {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+.movieDetails {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translate(0, 100%);
+    background: var(--third-color);
+    color: var(--text-color);
+    padding: 10px;
+    transition: transform 0.3s linear;
+    text-align: center;
+}
+.cardMediaContainer {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.card:hover .movieDetails {
+    transform: translate(0, 0);
+}
+.card:hover .cardMedia {
+    transform: scale3d(1.07, 1.07, 1.07);
+    filter: grayscale(1);
+}
+
+
+.card:hover {
+    transform: scale3d(1.07, 1.07, 1.07);
+    box-shadow: 0 10px 10px var(--third-color);
+}
+
+@media (max-width: 768px) {
+    .card{
+        height: 200px;
+    }
+    html{
+        font-size: 12px;
+    }
+}

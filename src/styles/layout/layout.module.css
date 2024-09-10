@@ -1,0 +1,14 @@
+.layout{
+    grid-template-areas:    "navbar"
+                            "body";
+    grid-template-columns: 1fr;
+    grid-template-rows: .1fr 1fr;
+    height: 100vh;
+    display: grid;
+}
+.navbar{
+    grid-area: navbar;
+}
+.body{
+    grid-area: body;
+}

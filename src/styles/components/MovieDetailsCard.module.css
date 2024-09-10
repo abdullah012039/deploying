@@ -1,0 +1,54 @@
+@import url("../theme/theme.css");
+.card {
+  display: flex;
+  background-color: var(--secondary-color-3);
+  color: var(--text-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--third-color);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.poster {
+  width: 300px;
+  height: auto;
+}
+
+.details {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.releaseDate, .rating, .runtime, .genres {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.overviewTitle, .castTitle {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.overview {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.castList {
+  list-style: none;
+  padding: 0;
+}
+
+.castItem {
+  font-size: 14px;
+  margin: 5px 0;
+}
+

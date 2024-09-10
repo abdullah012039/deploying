@@ -1,0 +1,53 @@
+.searchPage {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.loader {
+    display: block;
+    margin: 50px auto;
+}
+
+.resultGrid .resultCard {
+    transition: transform 0.2s ease-in-out;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+
+.resultCard:hover {
+    transform: translateY(-5px);
+}
+
+
+
+.titleText {
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+.cardContent {
+    background-color: var(--third-color);   
+}
+
+.MuiPaginationItem-text{
+    color: var(--text-color);
+}
+.noResults {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
