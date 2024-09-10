@@ -11,38 +11,38 @@ import WatchlistsPage from "../pages/WatchlistsPage";
 
 const ROUTES = [
   {
-    path: "/deploying/",
+    path: "/",
     element: <Layout />,
     errorElement: <PageNotFound />,
     children: [
       {
-        path: "/deploying/",
+        path: "/",
         element: <HomePage />,
       },
       {
-        path: "/deploying/search",
+        path: "/search",
         element: <SearchPage />,
       },
       {
-        path: "/deploying/trailer/:id",
+        path: "/trailer/:id",
         element: <TrailerPage />,
       },
       {
-        path: "/deploying/movie/:id",
+        path: "/movie/:id",
         element: <MovieDetailsPage />,
       },
       {
-        path: "/deploying/watchlists",
+        path: "/watchlists",
         element: <WatchlistsPage />,
       },
       {
-        path: "/deployigg/watchlist/:id",
+        path: "/watchlist/:id",
         element: <WatchlistPage />,
       }
     ],
   },
 ];
-//
+
 const router = createBrowserRouter(ROUTES);
 
 const Router = () => {
